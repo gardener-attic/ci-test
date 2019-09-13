@@ -1,4 +1,4 @@
-cc-test:
+ci-test:
   base_definition:
     traits:
       component_descriptor: ~
