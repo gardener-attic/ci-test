@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd "${SOURCE_PATH}"
+echo "changing stuff" >> test.txt
+
+git add .
+git commit -m 'some test change'

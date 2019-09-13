@@ -1,0 +1,13 @@
+cc-test:
+  base_definition:
+    traits:
+      component_descriptor: ~
+      version: ~
+  jobs:
+    gh-config-test:
+      repo:
+        trigger: false
+      steps:
+        foo:
+          publish_to:
+          - source
