@@ -17,7 +17,6 @@ ci-test:
           preprocess: 'finalize'
         release:
           nextversion: 'bump_minor'
-            steps:
       steps:
         foo:
           publish_to:
