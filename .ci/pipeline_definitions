@@ -22,3 +22,9 @@ ci-test:
         foo:
           publish_to:
           - source
+    create-upgrade-pr:
+      repo:
+        trigger: false
+      traits:
+        update_component_deps: ~
+
