@@ -15,7 +15,9 @@ ci-test:
       repo:
         trigger: false
       steps:
-        foo: ~
+        foo:
+          publish_to:
+          - source
     release:
       traits:
         version:
