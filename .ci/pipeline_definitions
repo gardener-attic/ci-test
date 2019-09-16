@@ -4,13 +4,18 @@ ci-test:
       component_descriptor: ~
       version: ~
   jobs:
+    pr-test:
+      traits:
+        pull-request: ~
+      steps:
+        foo:
+          publish_to:
+          - source     
     gh-config-test:
       repo:
         trigger: false
       steps:
-        foo:
-          publish_to:
-          - source
+        foo: ~
     release:
       traits:
         version:
