@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import util
+import pathlib
+
+dtype = util.check_env('DEPENDENCY_TYPE')
+name = util.check_env('DEPENDENCY_NAME')
+version = util.check_env('DEPENDENCY_VERSION')
+root_dir = util.check_env('REPO_DIR')
+
+util.info('type: ' + dtype)
+util.info('name: ' + name)
+util.info('version: ' + version)
+
+if name == 'github.com/gardener/gardener':
+  gardener_version_file = pathlib.Path(root_dir).joinpath('GARDENER_VERSION')
+  gardener_version_file.write_text(version)
