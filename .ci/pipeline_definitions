@@ -8,9 +8,7 @@ ci-test:
       traits:
         pull-request: ~
       steps:
-        foo:
-          publish_to:
-          - source     
+        bar: ~
     gh-config-test:
       repo:
         trigger: false
