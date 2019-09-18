@@ -7,12 +7,9 @@ ci-test:
     gh-config-test:
       repo:
         trigger: false
-        cfg_name: 'github_com_test'
       traits:
         draft_release: ~
     release:
-      repo:
-        cfg_name: 'github_com_test'
       traits:
         version:
           preprocess: 'finalize'
