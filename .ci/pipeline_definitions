@@ -12,10 +12,8 @@ ci-test:
     gh-config-test:
       repo:
         trigger: false
-      steps:
-        foo:
-          publish_to:
-          - source
+      traits:
+        draft_release: ~
     release:
       traits:
         version:
