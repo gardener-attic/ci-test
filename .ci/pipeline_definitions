@@ -4,11 +4,6 @@ ci-test:
       component_descriptor: ~
       version: ~
   jobs:
-    pr-test:
-      traits:
-        pull-request: ~
-      steps:
-        bar: ~
     gh-config-test:
       repo:
         trigger: false
@@ -21,13 +16,3 @@ ci-test:
         release:
           nextversion: 'bump_minor'
           rebase_before_release: true
-      steps:
-        foo:
-          publish_to:
-          - source
-    create-upgrade-pr:
-      repo:
-        trigger: false
-      traits:
-        update_component_deps: ~
-
